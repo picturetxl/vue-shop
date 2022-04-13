@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "159971",
+      "name": "cart",
+      "font_class": "cart1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "658064",
+      "name": "list view",
+      "font_class": "listview",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "1190355",
+      "name": "list",
+      "font_class": "list1",
+      "unicode": "e8ad",
+      "unicode_decimal": 59565
+    },
+    {
+      "icon_id": "4766685",
+      "name": "home",
+      "font_class": "home1",
+      "unicode": "e7c6",
+      "unicode_decimal": 59334
+    },
+    {
+      "icon_id": "4919061",
+      "name": "cart",
+      "font_class": "cart2",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "5379916",
+      "name": "mine",
+      "font_class": "mine2",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "6840975",
+      "name": "cart",
+      "font_class": "cart3",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "8450566",
+      "name": "home",
+      "font_class": "home2",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "30450",
       "name": "list",
       "font_class": "list",

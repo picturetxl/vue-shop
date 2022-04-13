@@ -5,13 +5,17 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    // name: "home",
+    path: "/home",
+    name: "home",
     component: Home,
   },
   {
+    path: "/",
+    redirect: "/home",
+  },
+  {
     path: "/list",
-    // name: "list",
+    name: "list",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

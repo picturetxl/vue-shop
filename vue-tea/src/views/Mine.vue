@@ -1,16 +1,15 @@
 <template>
   <div class="mine">
     这是我的
-    <i class="iconfont icon-mine"></i>
     <Tabbar></Tabbar>
   </div>
 </template>
 
 <script>
-import Tabbar from "../components/common/Tarbar.vue";
+import Tabbar from "../components/common/Tabbar.vue";
 export default {
-  name: "mine",
-  componnets: {
+  name: "Mine",
+  components: {
     Tabbar,
   },
 };
