@@ -1,5 +1,6 @@
 <template>
   <div class="name">
+    这是首页
     <Tabbar></Tabbar>
   </div>
 </template>

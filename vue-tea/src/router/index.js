@@ -6,12 +6,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "home",
+    // name: "home",
     component: Home,
   },
   {
     path: "/list",
-    name: "list",
+    // name: "list",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -26,12 +26,12 @@ const routes = [
     component: () => import("../views/Cart.vue"),
   },
   {
-    path: "/my",
-    name: "my",
+    path: "/mine",
+    name: "mine",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import("../views/My.vue"),
+    component: () => import("../views/Mine.vue"),
   },
   {
     path: "/list",

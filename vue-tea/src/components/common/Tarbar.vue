@@ -1,28 +1,58 @@
 <template>
   <div class="tabbar">
     <ul>
-      <li>
-        <i class="iconfont icon-home"></i>
-        <span>首页</span>
-      </li>
-      <li>
-        <i class="iconfont icon-list"></i>
-        <span>分类</span>
-      </li>
-      <li>
-        <i class="iconfont icon-cart"></i>
-        <span>购物车</span>
-      </li>
-      <li>
-        <i class="iconfont icon-mine"></i>
-        <span>我的</span>
+      <li
+        v-for="(item, index) in tabbarlist"
+        :key="index"
+        @click="switchtab(item.path)"
+      >
+        <i :class="item.icon"></i>
+        <span>{{ item.title }}</span>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      tabbarlist: [
+        {
+          icon: "iconfont icon-home", //* tabbar每个item的图标
+          title: "首页", //* tabbar每个item的标题
+          active: "", //* tabbar每个item选择之后的图标
+          path: "/", //* 跳转页面
+        },
+        {
+          icon: "iconfont icon-list", //* tabbar每个item的图标
+          title: "分类", //* tabbar每个item的标题
+          active: "", //* tabbar每个item选择之后的图标
+          path: "/list", //* 跳转页面
+        },
+        {
+          icon: "iconfont icon-cart", //* tabbar每个item的图标
+          title: "购物车", //* tabbar每个item的标题
+          active: "", //* tabbar每个item选择之后的图标
+          path: "/cart", //* 跳转页面
+        },
+        {
+          icon: "iconfont icon-mine", //* tabbar每个item的图标
+          title: "我的", //* tabbar每个item的标题
+          active: "", //* tabbar每个item选择之后的图标
+          path: "/mine", //* 跳转页面
+        },
+      ],
+    };
+  },
+  methods: {
+    switchtab(path) {
+      //* 当前路径则不进行跳转
+      if (path == this.$route.path) return;
+      this.$router.replace(path);
+    },
+  },
+};
 </script>
 
 <style lang="less" scoped>

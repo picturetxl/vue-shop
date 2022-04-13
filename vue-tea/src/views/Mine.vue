@@ -9,6 +9,7 @@
 <script>
 import Tabbar from "../components/common/Tarbar.vue";
 export default {
+  name: "mine",
   componnets: {
     Tabbar,
   },
